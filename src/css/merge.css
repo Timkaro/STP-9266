@@ -1,0 +1,153 @@
+.merge {
+  text-align: center;
+}
+
+.merge-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.merge-icon-img,
+.merge-line-hide {
+  display: none;
+}
+
+.merge-head {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.merge-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: var(--accent-yellow);
+}
+
+.merge-subtitle {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  color: var(--yeloow-2);
+}
+
+.merge-img {
+  margin: 0 auto;
+}
+
+.merge-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.merge-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+.merge-list-item {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: var(--accent-mint);
+}
+
+.merge-list-item.yellow {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  color: var(--yeloow-2);
+}
+
+@media screen and (min-width: 1200px) {
+  .merge.container {
+    margin: 0, auto;
+  }
+  .merge-start {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 24px;
+  }
+  .merge-icon-wrapper {
+    padding-left: 0;
+  }
+  .merge-icon-img {
+    display: block;
+  }
+  .merge-text-wrapper {
+    max-width: 1000px;
+  }
+  .merge-head {
+    margin-left: 100px;
+    gap: 36px;
+  }
+  .merge-title {
+    font-size: 56px;
+  }
+  .merge-subtitle {
+    font-size: 30px;
+    line-height: 167%;
+  }
+  .merge-line-list {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .merge-line-hide,
+  .merge-line-item {
+    display: flex;
+  }
+  .merge-line {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .merge-wrap-text {
+    max-width: 275px;
+  }
+  .line-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 136%;
+    text-align: center;
+    color: var(--yeloow-2);
+  }
+  .middle.line-text {
+    max-width: 100px;
+    height: auto;
+  }
+  .merge-list {
+    max-width: 700px;
+  }
+  .merge-list-item {
+    gap: 13px;
+  }
+  .merge-list-item {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 119%;
+  }
+  .merge-list-item.yellow {
+    font-size: 30px;
+    line-height: 167%;
+    color: var(--accent-yellow);
+  }
+}

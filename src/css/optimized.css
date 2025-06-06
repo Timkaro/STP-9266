@@ -1,0 +1,148 @@
+.optimized {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.opt-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.opt-img-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: var(--accent-yellow);
+  margin-bottom: 16px;
+}
+.title-image {
+  display: none;
+}
+.title-img-opt {
+  width: 204px;
+  height: 229px;
+}
+.swiper {
+  height: auto;
+  position: relative;
+}
+
+.opt-swiper {
+  
+  width: 100%;
+}
+
+.slide-opt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--yeloow-2);
+  border-radius: 5px;
+  padding: 8px 0;
+  min-width: unset;
+  max-width: unset;
+  box-sizing: border-box;
+  height: auto !important;
+}
+.text-opt {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 137%;
+  text-align: center;
+  color: var(--yeloow-2);
+  width: 193px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+.div-btn-opt {
+  position: absolute;
+   left: 10px;
+  width: 100%;
+  display: flex;
+  gap: 275px;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateY(-150%);
+  z-index: 1;
+}
+.prev-opt,
+.next-opt {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  border: none;
+}
+
+.svg-sc {
+  fill: var(--accent-mint);
+}
+@media screen and (min-width: 1200px) {
+  .cont-opt {
+    display: flex;
+    flex-direction: row;
+  }
+  .opt-img-cont {
+    width: 615px;
+    height: 694px;
+  }
+
+  .opt-div {
+    justify-content: flex-start;
+    gap: 300px
+  }
+  .title-image {
+    display: block;
+    
+    border-radius: 5px;
+    padding: 10px;
+    width: 76px;
+    height: 90px;
+  }
+  .title-img-opt {
+    width: 100%;
+    height: auto;
+  }
+  .opt-swiper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+   
+  }
+  .slide-opt {
+    display: block;
+    border: none;
+    padding: 8px 0;
+    min-width: 0;
+    height: auto;
+    flex: 0 0 auto;
+  }
+
+  .text-opt {
+    font-size: 28px;
+    line-height: 136%;
+    height: auto;
+    width: 100%;
+    text-align: start;
+  }
+  .div-btn-opt {
+    display: none;
+  }
+}

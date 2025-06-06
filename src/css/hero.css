@@ -1,0 +1,228 @@
+.hero {
+  background-color: #000;
+  background-image: url(/img/hero-bcg-m.jpg);
+  width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  padding-top: 0;
+}
+@media (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/img/hero-bcg-m@2x.jpg);
+  }
+}
+
+.hero-text {
+  font-family: var(--second-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #0bbbad;
+  margin-left: 80px;
+}
+
+.hero-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 50px;
+  padding-left: 16px;
+  color: var(--accent-mint);
+  margin-bottom: 330px;
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 15px;
+  margin-right: 10px;
+  margin-bottom: 100px;
+}
+
+.hero-list-item {
+  font-family: var(--third-family);
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--accent-yellow);
+}
+
+.hero-list-item:nth-child(2) {
+  color: var(--accent-mint);
+}
+
+.hero-download {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+
+.hero-down-link {
+  border: 3px solid var(--accent-mint);
+  width: 189px;
+  height: 36px;
+  box-shadow: 0 4px 100px 0 #080b17;
+  background: #1d1745;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 250%;
+  color: var(--accent-mint);
+}
+
+.hero-down-link:hover,
+.hero-down-link:focus {
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.hero-google-link:hover,
+.hero-google-link:focus {
+  color: var(--accent-yellow);
+}
+
+.hero-google-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-google-link:hover,
+.hero-google-link:focus {
+  color: var(--accent-mint);
+}
+
+.hero-google-icon {
+  margin-left: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero.container {
+    max-width: 1200px;
+  }
+  .hero {
+    background-color: #000;
+    background-image: url(/img/hero-bcg-d.jpg);
+    width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+  }
+  .hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    padding-top: 57px;
+    margin-bottom: 350px;
+  }
+  .hero-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 475px;
+  }
+  .hero-text {
+    position: relative;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    color: #0bbbad;
+  }
+  .hero-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 110px;
+    text-align: center;
+    color: var(--accent-mint);
+    margin-bottom: 0;
+  }
+  .hero-subtitle {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 139%;
+    color: var(--accent-mint);
+  }
+  .hero-descr {
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 158%;
+    color: var(--yeloow-2);
+    max-width: 430px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .hero-descr:hover {
+    white-space: normal;
+    overflow: visible;
+    background-color: transparent;
+    z-index: 10;
+  }
+  .hero-list {
+    padding-top: 24px;
+    padding-right: 0;
+    text-align: start;
+  }
+  .hero-list-item {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+  }
+  .hero-question {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 167%;
+    color: var(--yeloow-2);
+    display: flex;
+    flex-direction: column;
+    margin-left: 600px;
+  }
+  .hero-download {
+    gap: 35px;
+    margin-bottom: 18px;
+    margin-left: 105;
+  }
+  .hero-down-link {
+    border: 5px solid var(--accent-mint);
+    width: 315px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 167%;
+  }
+  .hero-google-link {
+    font-size: 20px;
+    line-height: 190%;
+  }
+  .hero-google-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(/img/hero-bcg-d@2x.jpg);
+  }
+}

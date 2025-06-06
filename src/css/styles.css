@@ -8,11 +8,24 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+@import url('./hero.css');
+@import url('./features.css');
+@import url('./domination.css');
+@import url('./merge.css');
+@import url('./story.css');
+@import url('./crash.css');
+@import url('./strategy.css');
+@import url('./events.css');
+@import url('./optimized.css');
+@import url('./screen.css');
+@import url('./faq.css');
+@import url('./reviews.css');
+@import url('./cta.css');
+@import url('./contact.css');
+
 @import url('./footer.css');
+@import Url('./cookie.css');
+@import url('./rules.css');

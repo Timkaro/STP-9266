@@ -1,0 +1,232 @@
+.story {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .title-box {
+    display: flex;
+    justify-content: center;
+  }
+  .title-img-story {
+    display: none;
+  }
+  .title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: var(--accent-yellow);
+    margin-bottom: 16px;
+  }
+  
+  .bgs-img-story {
+    width: 320px;
+height: 226px;
+  }
+  .bg-img-story {
+    display: none;
+  }
+  .colon-bg-stor {
+    display: none;
+  }
+  .title-swiper-story {
+    font-family: var(--second-family);
+font-weight: 700;
+font-size: 16px;
+line-height: 137%;
+text-align: center;
+color: var(--accent-yellow);
+margin: 16px 0;
+  }
+  .colon-bg-story {
+    display: none;
+  }
+  .text-story {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 157%;
+    text-align: center;
+    color: var(--yeloow-2);
+    margin-bottom: 16px;
+  }
+  
+  /* .swiper {
+    height: auto;
+    position: relative;
+  }
+  .swiper-wrapper.story-swiper {
+    display: flex;
+  }
+  .swiper-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide-story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  } */
+  .div-btn-story {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+     align-items: center;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .prev,
+  .next {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .svg-story {
+    fill: var(--accent-mint);
+  }
+  
+  .wrap-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 277px;
+    padding: 8px 0;
+  }
+  .name-story {
+       color: var(--accent-mint);
+  }
+  
+  .text-wrap-story {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137%;
+    text-align: center;
+    margin-top: 8px;
+  color: var(--yeloow-2);
+    max-width: 275px;
+  }
+
+  .colon-story {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--yeloow-2);
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .story {
+      flex-direction: row;
+      gap: 200px;
+    }
+  
+    .div-titile-story {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .title-img-story {
+      display: block;
+      border-radius: 5px;
+      padding: 10px; 
+      /* width: 90px;  */
+       height: 90px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 56px;
+      text-align: center;
+    }
+    /* .wrapper-imgbg {
+        display: flex;
+        align-self: center;
+    } */
+    .bg-img-story {
+        display: block;
+        width: 1200px;
+    /* height: 226px; */
+      }
+      .bgs-img-story {
+        display: none;
+      }
+.title-swiper-story {
+    font-size: 30px;
+line-height: 167%;
+}
+.div-colon-bg-story {
+    display: flex;
+    justify-content: center
+}
+.colon-bg-story {
+    display: flex;
+    font-family: var(--font-family);
+font-weight: 500;
+font-size: 32px;
+line-height: 131%;
+color: var(--yeloow-2);
+max-width: 1000px;
+    margin-top: 8px;
+}
+    .text-story {
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 167%;
+        text-align: center;
+        color: var(--yeloow-2);
+        max-width: 600px;
+    }
+    
+
+    .div-btn-story {
+      flex-direction: space-between;
+      top: 35%;
+      padding-left: 0;
+    }
+    .screen-swiper.static-view .swiper-button-next,
+    .screen-swiper.static-view .swiper-button-prev {
+      display: none !important;
+    }
+    
+  
+    .text-wrap-story {
+      /* position: relative; */
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 136%;
+      text-align: center;
+      color: var(--accent-mint);
+      margin-top: 29px;
+    }
+    .colon-story {
+      font-size: 30px;
+      line-height: 167%;
+      margin-top: 36px;
+    }
+    
+  }

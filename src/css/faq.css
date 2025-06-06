@@ -1,0 +1,121 @@
+.div-faq {
+  display: flex;
+  gap: 65px;
+  margin-bottom: 35px;
+}
+
+.div-title {
+  display: flex;
+  border: 3px solid var(--accent-mint);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.title-faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--accent-yellow);
+  margin-bottom: 20px 34px;
+}
+
+.accordion {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--yeloow-2);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-item {
+  padding: 0px 0px 8px 0px;
+  cursor: pointer;
+}
+
+.accordion-title {
+  display: flex;
+  border-bottom: 1px solid var(--yeloow-2);
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--yeloow-2);
+  transition: color 0.3s;
+  padding-bottom: 16px;
+}
+
+.accordion-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 125%;
+  color: var(--accent-mint);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease;
+  margin-bottom: 24px;
+
+  padding-right: 30px;
+}
+.accordion-item.active .accordion-content {
+  margin-top: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  /* .faq {
+    background: linear-gradient(91deg, #0c072c 0%, #226158 60.58%);
+  } */
+  .div-title {
+    border: 3px solid var(--accent-mint);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .div-faq {
+    gap: 395px;
+    margin-bottom: 60px;
+  }
+  .title-faq {
+    font-size: 56px;
+  }
+  .accordion-title {
+    border-bottom: 0.5px solid var(--yeloow-2);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 136%;
+    padding: 10px;
+    margin-top: 40px;
+  }
+  .accordion-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .accordion-content {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 136%;
+  }
+  .accordion-item.active .accordion-content {
+    margin-top: 50px;
+  }
+}

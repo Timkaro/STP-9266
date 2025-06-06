@@ -1,0 +1,249 @@
+.cta.container {
+  margin: 0 auto;
+}
+.cta-start {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cta-icon-img {
+  display: none;
+}
+
+.cta-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  color: var(--accent-yellow);
+}
+
+.cta-subtitle {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  color: var(--yeloow-2);
+}
+
+.cta-swiper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cta-wrapper {
+  display: flex;
+}
+
+.cta-slide {
+  display: flex !important;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.cta-wrap-img {
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.cta-descr {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 137%;
+  text-align: center;
+  color: var(--yeloow-2);
+  max-width: 238px;
+}
+
+.cta-descr > .red {
+  color: #ff0022;
+}
+
+.cta-down-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-download {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cta-down-link {
+  border: 3px solid var(--accent-mint);
+  width: 189px;
+  height: 36px;
+  box-shadow: 0 4px 100px 0 #080b17;
+  background: #1d1745;
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 250%;
+  color: var(--accent-mint);
+}
+
+.cta-down-link:hover,
+.cta-down-link:focus {
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.cta-google-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.cta-google-link:hover,
+.cta-google-link:focus {
+  color: var(--accent-yellow);
+}
+
+/* .cta-google-link:hover,
+.cta-google-link:focus {
+  color: var(--accent-mint);
+} */
+
+.cta-google-icon {
+  margin-left: 16px;
+}
+
+.cta-down-text {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .cta.container {
+    margin: 0, auto;
+    max-width: 1000px;
+  }
+  .cta-start {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 68px;
+  }
+  .cta-icon-wrapper {
+    margin-left: 0;
+  }
+  .cta-icon-img {
+    display: block;
+  }
+  .cta-text-wrapper {
+    max-width: 900px;
+  }
+  .cta-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 300px;
+  }
+  .cta-title {
+    font-size: 56px;
+  }
+  .cta-subtitle {
+    font-size: 30px;
+    line-height: 167%;
+  }
+  .cta-swiper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    min-width: 0;
+  }
+  .cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1000px;
+    gap: 51px;
+  }
+  #cta.swiper-slide {
+    margin: 0 auto;
+  }
+  .cta-slide {
+    flex-direction: row;
+    gap: 90px;
+  }
+  .cta-slide.slide-2 {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: start;
+  }
+  .cta-wrap-img {
+    display: flex;
+    width: 485px;
+    height: 359px;
+    margin: 0;
+  }
+  .cta-img {
+   width:100%;
+    height: auto;
+    margin: 0;
+  }
+  .cta-descr {
+    font-size: 30px;
+    line-height: 167%;
+    align-content: center;
+    text-align: start;
+    max-width: 425px;
+  }
+  .slide-1.cta-descr {
+    padding-left: 90px;
+  }
+  .cta-down-wrapper {
+    margin-right: 100px;
+    justify-content: flex-start;
+  }
+  .cta-download {
+    gap: 35px;
+    margin-bottom: 18px;
+  }
+  .cta-down-link {
+    border: 5px solid var(--accent-mint);
+    width: 315px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 167%;
+  }
+  .cta-google-link {
+    font-size: 20px;
+    line-height: 190%;
+  }
+  .cta-google-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .cta-down-descr {
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+  }
+  .cta-down-text {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 167%;
+    text-align: center;
+    color: var(--yeloow-2);
+    max-width: 483px;
+  }
+}

@@ -1,21 +1,109 @@
 .footer {
   padding: 20px 0;
 }
-.footer-desc {
-  text-align: center;
+
+.footer-social {
+  padding: 0 15px;
 }
-.footer-link {
-  position: relative;
+
+.footer-list-icons {
+  display: flex;
+  justify-content: start;
+  gap: 47px;
+  margin-bottom: 39px;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  fill: var(--accent-mint);
+}
+
+.social-wrapper:hover .social-icons,
+.social-wrapper:focus .social-icons {
+  fill: #fff;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: end;
+  gap: 82px;
+  padding: 0 15px;
+}
+
+.footer-list-terms {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: end;
+}
+
+.footer-item-terms {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0em;
+  text-align: right;
+  color: var(--accent-mint);
+}
+
+.terms-descr:hover,
+.terms-descr:focus {
+  color: #fff;
+}
+
+.footer-copyright {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 125%;
+  text-align: end;
+  color: var(--accent-mint);
+  margin-top: 9px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    position: relative;
+  }
+  .footer.container {
+    padding-top: 80px;
+  }
+  .footer-social{
+    padding: 0 100px;
+  }
+  .footer-list-icons {
+    gap: 112px;
+    margin-bottom: 92px;
+   justify-content: end;
+  }
+  .social-icons {
+    width: 35px;
+    height: 35px;
+  }
+  .footer-wrapper{
+    padding: 0 100px;
+  }
+  .footer-list-terms {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-item-terms {
+    font-size: 28px;
+    line-height: 129%;
+  }
+  .footer-copyright {
+    font-size: 20px;
+    line-height: 180%;
+  }
+  .footer-logo img {
+    position: absolute;
+    top: 118px;
+    left: 120px;
+    width: 76px;
+    height: 90px;
+  }
 }

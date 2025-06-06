@@ -1,0 +1,131 @@
+.swiper-wraper {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.gamepad-icon {
+  display: none;
+}
+.title_features {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 24px;
+  font-family: var(--second-family);
+  color: var(--accent-yellow);
+}
+.sub-features {
+  display: flex;
+  font-family: var(--second-family);
+  font-weight: 700;
+  text-align: center;
+  color: var(--yeloow-2);
+  font-size: 14px;
+  line-height: 157%;
+  margin-bottom: 16px;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 922px;
+  gap: 16px;
+  margin-bottom: 38px;
+}
+.custom-btn {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .div-swiper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features-header {
+    display: flex;
+    padding-top: 45px;
+  }
+
+  .gamepad-icon {
+    display: flex;
+  }
+  .title_features {
+    font-size: 56px;
+  }
+  .sub-features {
+    width: 599px;
+    font-size: 36px;
+    line-height: 139%;
+    margin-bottom: 24px;
+  }
+  .titles {
+    display: flex;
+    margin: 0 0 24px 0;
+  }
+  .img-title {
+    margin-right: 200px;
+  }
+
+  .swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    object-fit: cover;
+  }
+
+  .custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76px;
+    height: 76px;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    transform: translateY(200%);
+  }
+  .btn-prev {
+    display: flex;
+    margin-right: 24px;
+  }
+  .btn-next {
+    display: flex;
+    margin-left: 24px;
+  }
+
+  .swiper-button-next {
+    border-radius: 5px;
+    border: 3px solid var(--accent-mint);
+    right: 200px;
+  }
+  .swiper-button-prev {
+    border-radius: 5px;
+    border: 3px solid var(--accent-mint);
+    left: 200px;
+  }
+}
+
+.features-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 264px;
+  margin-top: 20px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 136%;
+  text-align: center;
+  color: var(--yeloow-2);
+}
+.span_features {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  max-width: 264px;
+  color: var(--accent-mint);
+}
