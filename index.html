@@ -1,138 +1,1706 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/evpl_vite_template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/STP-9266/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/evpl_vite_template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/evpl_vite_template/assets/styles-r6SaaQ-x.css">
+    <meta
+      name="description"
+      content="Pal Go: Tower Defense TD – Merge, strategize, and battle your way to glory in this epic PvP fantasy tower defense game."
+    />
+    <meta
+      name="keywords"
+      content="tower defense, merge strategy game, PvP tower game, defense crash mechanic, fantasy TD, real-time tower game, monster merge battle"
+    />
+    <meta name="author" content="Towerstorm Studios" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://royalturborush.com" />
+
+    <title>STP-9266</title>
+    <script type="module" crossorigin src="/STP-9266/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/STP-9266/assets/vendor-B1VTIvwy.js">
+    <link rel="stylesheet" crossorigin href="/STP-9266/assets/vendor-HdWFjXwp.css">
+    <link rel="stylesheet" crossorigin href="/STP-9266/assets/styles-D3Qj0Z8E.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/evpl_vite_template/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
+    <header class="header" id="header">
+  <div class="container-header">
+    <div class="header-area">
+      <nav class="header-nav-mob">
+        <div class="header-logo-wrap">
+          <a class="logo-link" href="/index.html" aria-label="Site logo">
+            <picture>
+              <source srcset="/STP-9266/assets/logo-d-CdmInASr.png 1x, /STP-9266/assets/logo-d@2x-DVpqWl2-.png 2x" media="(min-width: 1200px)" >
+              <source srcset="data:image/png;base64,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 1x, /STP-9266/assets/logo-m@2x-CFvAK3Jc.png 2x" media="(max-width: 1199px)" >
+            <img
+              src="data:image/png;base64,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"
+              alt="logo"
+              width="24"
+              height="24"
+              class="logo"
+            />
+            </picture>
+          </a>
+        </div>
+
+        <div class="modal">
+          <button class="menu-toggle" type="button" data-state="closed">
+            <svg class="open-icon" data-icon="open" data-visible="true" width="35" height="10">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-burger"></use>
+            </svg>
+            <svg class="close-icon" data-icon="close" data-visible="false" width="10" height="10">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <div class="burger-menu" data-menu data-visible="close">
+            <div class="burger-wrapper">
+              <ul class="mobile-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Game Features</a></li>
+                <li><a href="#domination">PvP Domination</a></li>
+                <li><a href="#merge">Merge & Rank Mechanics</a></li>
+                <li><a href="#story-world">Story & World</a></li>
+                <li><a href="#crash">Crash & Recovery</a></li>
+                <li><a href="#strategy">Strategy Center</a></li>
+                <li><a href="#events-updates">Events & Updates</a></li>
+                <li><a href="#optimized">Mobile Optimized</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#cta">CTA</a></li>
+              </ul>
+            </div>
+            <ul class="mobile-img">
+              <li class="first-burger">
+                <img
+                  srcset="/STP-9266/assets/burger1-7wsEk3z1.png 1x, /STP-9266/assets/burger1@2x-CCVUF2Bs.png 2x"
+                  src="/STP-9266/assets/burger1-7wsEk3z1.png"
+                  alt="first photo"
+                  width="96"
+                  height="76"
+                />
+              </li>
+              <li class="second-burger">
+                <img
+                  srcset="/STP-9266/assets/burger2-CaOdNIY6.png 1x, /STP-9266/assets/burger2@2x-CV7MQz8t.png 2x"
+                  src="/STP-9266/assets/burger2-CaOdNIY6.png"
+                  alt="second photo"
+                  width="96"
+                  height="76"
+                />
+              </li>
+              <li class="third-burger">
+                <img
+                  srcset="/STP-9266/assets/burger3-8k2IBFHG.png 1x, /STP-9266/assets/burger3@2x-Dd-MUa6K.png 2x"
+                  src="/STP-9266/assets/burger3-8k2IBFHG.png"
+                  alt="third photo"
+                  width="96"
+                  height="76"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="nav-list-desc">
+          <li class="nav-list-item"><a href="#hero">Home</a></li>
+          <li class="nav-list-item"><a href="#features">Game Features</a></li>
+          <li class="nav-list-item"><a href="#domination">PvP Domination</a></li>
+          <li class="nav-list-item"><a href="#merge">Merge & Rank Mechanics</a></li>
+          <li class="nav-list-item"><a href="#story-world">Story & World</a></li>
+          <li class="nav-list-item"><a href="#crash">Crash & Recovery</a></li>
+          <li class="nav-list-item"><a href="#strategy">Strategy Center</a></li>
+          <li class="nav-list-item"><a href="#events-updates">Events & Updates</a></li>
+          <li class="nav-list-item"><a href="#optimized">Mobile Optimized</a></li>
+          <li class="nav-list-item"><a href="#screenshots">Screenshots</a></li>
+          <li class="nav-list-item"><a href="#faq">FAQ</a></li>
+          <li class="nav-list-item"><a href="#cta">CTA</a></li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
-      </div>
     </div>
   </div>
+</div>
 </header>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/evpl_vite_template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
 
-      <article class="badges">
+
+    <main>
+      <section class="hero section" id="hero">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div class="hero-wrapper">
+      <div class="hero-box">
+        <p class="hero-text">Welcome to</p>
+        <h1 class="hero-title">Pal Go</h1>
+        <p class="hero-subtitle">
+          Step into a world of chaos and strategy in Pal Go:
+        </p>
+        <p class="hero-descr">
+          Tower Defense TD, the next-generation PvP defense game that merges
+          classic tower gameplay with epic roguelite mechanics. Build your army,
+          stop the crash, and outsmart the dark wizard Mazdor the Black before
+          he consumes the Acorn Kingdoms
+        </p>
+      </div>
+      <ul class="hero-list">
+        <li class="hero-list-item">Merge</li>
+        <li class="hero-list-item">Defend</li>
+        <li class="hero-list-item">Dominate</li>
+      </ul>
+    </div>
+
+    <ul class="hero-question">
+      <li><p>Are you fast enough?</p></li>
+      <li><p>Ready enough?</p></li>
+      <li><p>Smart enough?</p></li>
+    </ul>
+
+    <ul class="hero-download">
+      <li class="hero-download-item">
+        <a class="hero-down-link" href=" https://royalturborush.com" download=""
+          >Download Now</a
         >
-          HTML Inject
-        </a>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
+      <li class="hero-download-item">
+        <a class="hero-google-link" href=" https://royalturborush.com"
+          >Free on
+          <img
+            class="hero-google-icon"
+            srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMLSURBVHgBtZZNTBNBFMf/b3cpUKgfBBBiouVgQrxIlCMJRUmM8YKEC55KhANeDIkXE5U2SgKe6MF4MEo5gRfpwURUkBoxQSRAQiKQIDTEAIEoi9RS+7HjTrWk0pbu1vI7dLbz3tvf62ZmugSVyr46C0hsVy8tjCCDMVeYKfbpRpcHBwSd7au3CkQ9iaPMFlKU3oNoQBAV042kUUY2kYSRymf17cgwZHngYb5jDijZy/smMjAPY7BPNj53IhPi8x1exgQffCUOhHPnUhZkqoGIOPrFV/wYIdOopkLeADGlaaLR5UYa/CPm+AsGEDjqglbUBpzp7IA4cTrydBoQEk3mfL8Cw2Yd9EAgq0Ti0rn++p5HA+XmVPlCsgCXZ3+7Cr20GOetzaaFqeCw1L7zEmboFXOy5YvIWW8BKUZoodk4h2vGeX55RH32NjFLHAm8Fq26xRzDdhWMK7dSymOku6iP30wC9QSGxKW9DaQUc8RfJ5D39R4oVJgwfts0FSdN1kDwjWTRLI4kBguRx395jNxEQXQeGsflFKdebAPqx0hoSKzTLN4r59KHhz+g2rAKvTBG7brEUbn5SxOeBj7ilLSFtCBU6BYX+ddgG+9Afv9xhNdzkSbTusRceneyLTIyv4gfT8oRmCmAXgiCXbPYvL2ArvGWiDSWny9Owj9aouke6r/aO3V/10i1AZekpaByYxTXZ7tgDHkTxnfel0bGnKq1xEIijzrYDbVBZ3Qupbh69RVaZztTpSWW8/c3BY4sMa+bamQ5Nn9fccNiLxo8TmiFy1lIkHNrVsCFkpjfTRe4UI7LlTIl5ZBq2BkrcRy6v2z7MyMnzZUyJVVxhrJEe+ngmEdLcpy49XMXqtcGoRl1pYYNolWrME7MV+zNmTs4vTmtrVIVksBsRcMTbqSBFJXyg8HsXUhd8Z/CXXHsabQ/6l5kzF789pMTGYAWL9VO5Qe2KpImqEszTMxeMjTRjQwimIJyWzKheuLYveG8skxL/94f2KittDCFbEQ4o4BtgQSnL2TsLnO7ZRwQvwFPVVtceMnYBAAAAABJRU5ErkJggg== 1x, data:image/png;base64,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 2x"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMLSURBVHgBtZZNTBNBFMf/b3cpUKgfBBBiouVgQrxIlCMJRUmM8YKEC55KhANeDIkXE5U2SgKe6MF4MEo5gRfpwURUkBoxQSRAQiKQIDTEAIEoi9RS+7HjTrWk0pbu1vI7dLbz3tvf62ZmugSVyr46C0hsVy8tjCCDMVeYKfbpRpcHBwSd7au3CkQ9iaPMFlKU3oNoQBAV042kUUY2kYSRymf17cgwZHngYb5jDijZy/smMjAPY7BPNj53IhPi8x1exgQffCUOhHPnUhZkqoGIOPrFV/wYIdOopkLeADGlaaLR5UYa/CPm+AsGEDjqglbUBpzp7IA4cTrydBoQEk3mfL8Cw2Yd9EAgq0Ti0rn++p5HA+XmVPlCsgCXZ3+7Cr20GOetzaaFqeCw1L7zEmboFXOy5YvIWW8BKUZoodk4h2vGeX55RH32NjFLHAm8Fq26xRzDdhWMK7dSymOku6iP30wC9QSGxKW9DaQUc8RfJ5D39R4oVJgwfts0FSdN1kDwjWTRLI4kBguRx395jNxEQXQeGsflFKdebAPqx0hoSKzTLN4r59KHhz+g2rAKvTBG7brEUbn5SxOeBj7ilLSFtCBU6BYX+ddgG+9Afv9xhNdzkSbTusRceneyLTIyv4gfT8oRmCmAXgiCXbPYvL2ArvGWiDSWny9Owj9aouke6r/aO3V/10i1AZekpaByYxTXZ7tgDHkTxnfel0bGnKq1xEIijzrYDbVBZ3Qupbh69RVaZztTpSWW8/c3BY4sMa+bamQ5Nn9fccNiLxo8TmiFy1lIkHNrVsCFkpjfTRe4UI7LlTIl5ZBq2BkrcRy6v2z7MyMnzZUyJVVxhrJEe+ngmEdLcpy49XMXqtcGoRl1pYYNolWrME7MV+zNmTs4vTmtrVIVksBsRcMTbqSBFJXyg8HsXUhd8Z/CXXHsabQ/6l5kzF789pMTGYAWL9VO5Qe2KpImqEszTMxeMjTRjQwimIJyWzKheuLYveG8skxL/94f2KittDCFbEQ4o4BtgQSnL2TsLnO7ZRwQvwFPVVtceMnYBAAAAABJRU5ErkJggg=="
+            alt="google icon"
+            width="16"
+            height="16"
+          />
         </a>
       </li>
     </ul>
   </div>
-</article>
+</section>
 
+      <section class="features" id="features">
+    <div class="container">
+      <div class="features-header">
+        <div class="img-title">
+          <img
+            src="/STP-9266/assets/gamepad-D7O5wvAC.png"
+            width="76px"
+            max-height="76px"
+            alt="Gamepad Icon"
+            class="gamepad-icon"
+          />
+        </div> 
+        <div class="titles">
+        <h2 class="title_features">Game Features</h2>
+        <h3 class="sub-features">Everything That Makes Pal Go Legendary</h3>
+          </div>
+      </div>
+           <div class="div-swiper">
+          <div class="btn-prev">
+            <button class="swiper-button-prev custom-btn" aria-label="Previous slide">
+              <svg
+                width="20"
+                height="35"
+                viewBox="0 0 20 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M18 1.5L2 17.5L18 33.5"
+                  stroke="url(#paint0_linear_140_1514)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_140_1514"
+                    x1="10"
+                    y1="1.5"
+                    x2="10"
+                    y2="33.5"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#10DEB1" />
+                    <stop offset="1" stop-color="white" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </button>
+           </div>
+             <div class="swiper">
+             <div class="features-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img srcset="/STP-9266/assets/pic1-Dw3aT_-8.png 1x, /STP-9266/assets/pic1@2x-LwG3SRmf.png 2x" 
+              src="/STP-9266/assets/pic1-Dw3aT_-8.png" 
+              width="264px" 
+              alt="Image1" />
+              <p class="features-text">
+                <span class="span_features">🔥 Crash-Resistant Strategy:</span> A
+                new twist where your defense can literally collapse!
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img srcset="/STP-9266/assets/pic2-C3CbYxJR.png 1x, /STP-9266/assets/pic2@2x-CQWFpZ0X.png 2x"
+              src="/STP-9266/assets/pic2-C3CbYxJR.png" width="264px" alt="Image2" />
+              <p class="features-text">
+                <span class="span_features">⚔️ Merge-to-Rank Mechanics:</span>
+                Combine and enhance troops on the fly
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img srcset="/STP-9266/assets/pic3-BuJ2LjOO.png 1x, /STP-9266/assets/pic3@2x-DmWFyM2L.png 2x" src="/STP-9266/assets/pic3-BuJ2LjOO.png" width="264px" alt="Image3" />
+              <p class="features-text">
+                <span class="span_features">🏹 PvP Arena Skirmishes:</span>
+                Real-time strategy meets fast-paced combat
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img srcset="/STP-9266/assets/pic4-Dz3LkrNO.png 1x, /STP-9266/assets/pic4@2x-uLeVcCO-.png 2x" src="/STP-9266/assets/pic4-Dz3LkrNO.png" width="264px" alt="Image4" />
+              <p class="features-text">
+                <span class="span_features">🏰 Tower Building:</span> Tactical
+                base-building and reinforcement
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img srcset="/STP-9266/assets/pic5-DXVCoUxu.png 1x, /STP-9266/assets/pic5@2x-DvUyTbwu.png 2x" src="/STP-9266/assets/pic5-DXVCoUxu.png" width="264px" alt="Image5" />
+              <p class="features-text">
+                <span class="span_features">🧠 Hero Customization:</span> Choose
+                your champion and unlock abilities
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img srcset="/STP-9266/assets/pic6-B4E4k-tf.png 1x, /STP-9266/assets/pic6@2x-5845g1UG.png 2x" src="/STP-9266/assets/pic6-B4E4k-tf.png" width="264px" alt="Image6" />
+              <p class="features-text">
+                <span class="span_features">📈 Live Leaderboards:</span> Show your
+                rank and climb to global domination
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="/STP-9266/assets/pic7-W8omUUyv.png" width="264px" alt="Image7" />
+              <p class="features-text">
+                <span class="span_features">🎯 Adaptive AI:</span> No two battles
+                feel the same
+              </p>
+            </div>
+          </div>
+              </div>
+                   </div>
+            <div class="btn-next">
+              <button class="swiper-button-next custom-btn" aria-label="Next slide">
+                <svg
+                      width="20"
+                      height="36"
+                      viewBox="0 0 20 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                >
+                      <path
+              d="M2 2L18 18L1.99999 34"
+              stroke="url(#paint0_linear_140_1044)"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+                      />
+                      <defs>
+              <linearGradient
+                id="paint0_linear_140_1044"
+                x1="10"
+                y1="2"
+                x2="10"
+                y2="34"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="#10DEB1" />
+                <stop offset="1" stop-color="white" />
+              </linearGradient>
+                      </defs>
+                </svg>
+              </button>
+            </div>
+        </div>
+  </section>
+  
+      <section class="domination section" id="domination">
+  <div class="container">
+    <div class="domination-area">
+      <div class="dom-icon-wrapper">
+        <img
+          class="domination-icon"
+          src="/STP-9266/assets/swords-B7brPHwd.png"
+          alt="domination`s icon"
+          width="76"
+          height="76"
+        />
+      </div>
+      <div class="dom-text-wrapper">
+        <div class="domination-head">
+          <h2 class="domination-title">PvP Domination</h2>
+          <h3 class="domination-subtitle">One Arena. Two Players. No Mercy.</h3>
+        </div>
+        <p class="domination-text">
+            Clash in real-time against global players in tense,
+            unforgiving PvP skirmishes: </p>
+      </div>
+    </div>
+
+      <div class="dom-swiper swiper-container" id="dom-swiper">
+        <div class="dom-wrapper swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="dom-slide slide-1">
+              <div class="domination-wrap-img">
+                  <img
+                      class="domination-img"
+                      src="/img/domination.png 1x"
+                      srcset="/STP-9266/assets/domination-ytLuiInP.png 1x, /STP-9266/assets/domination@2x-DepIL3qT.png 2x"
+                      alt="domination`s photo"
+                      width="210"
+                      height="118"
+                    />
+              </div>
+              <div class="domination-wrapper">
+                <ul class="domination-list">
+                  <li class="domination-list-item">
+                    Break through enemy lines with elite merged troops
+                  </li>
+                  <li class="domination-list-item">
+                    Exploit their positioning and force a crash
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="dom-slide slide-2">
+              <div class="domination-wrap-img">
+                  <img
+                      class="domination-img"
+                      src="/img/domination2.png 1x"
+                      srcset="/STP-9266/assets/domination2-Co-oZUSc.png 1x, /STP-9266/assets/domination2@2x-DrTaFlJW.png 2x"
+                      alt="domination`s photo"
+                      width="210"
+                      height="118"
+                    />
+              </div>
+              <div class="domination-wrapper">
+                <ul class="domination-list">
+                  <li class="domination-list-item ">
+                    Master counter-play by reading enemy builds
+                  </li>
+                  <li class="domination-list-item">
+                    Rise through ranked tiers and earn exclusive PvP-only loot
+                  </li>
+                  <li class="domination-list-item">
+                    Every battle counts — and every crash resets the board
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="domination-info">
+      Victory is not luck. It’s perfect positioning.
+    </p>
+  </div>
+</section>
+
+      <section class="merge section" id="merge">
+  <div class="container">
+    <div class="merge-start">
+      <div class="merge-icon-wrapper">
+        <img
+          class="merge-icon-img"
+          src="/STP-9266/assets/dna-CDhsIXNj.png"
+          alt="merge`s icon"
+          width="76"
+          height="76"
+        />
+      </div>
+      <div class="merge-text-wrapper">
+        <div class="merge-head">
+          <h2 class="merge-title">Merge & Rank Mechanics</h2>
+          <h3 class="merge-subtitle">
+            Merging Is Your Power –But Use It Wisely
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="merge-slide">
+      <ul class="merge-line-list">
+        <li class="merge-line-item merge-line-hide">
+          <div class="merge-line">
+            <div class="merge-wrap-img">
+              <img
+                class="merge-img"
+                src="/img/merge2.png 1x"
+                srcset="/STP-9266/assets/merge2-DvuZ-TMB.png 1x, /STP-9266/assets/merge2@2x-CEeXwEEc.png 2x"
+                alt="merge`s photo"
+                width="184"
+                height="237"
+              />
+            </div>
+            <div class="merge-wrap-text">
+              <p class="line-text">Merge identical units to rank them up</p>
+            </div>
+            <div class="merge-wrap-img">
+              <img
+                class="merge-img"
+                src="/img/merge3.png 1x"
+                srcset="/STP-9266/assets/merge3-DLhqToBO.png 1x, /STP-9266/assets/merge3@2x-CXN2PmJN.png 2x"
+                alt="merge`s photo"
+                width="181"
+                height="233"
+              />
+            </div>
+          </div>
+        </li>
+
+        <li class="merge-line-item">
+          <div class="merge-line middle">
+            <div class="merge-wrap-text">
+              <p class="line-text merge-line-hide">
+                Combine strategically to unlock special attacks
+              </p>
+            </div>
+            <div class="merge-wrap-img">
+              <img
+                class="merge-img"
+                src="/img/merge1.png 1x 1x"
+                srcset="/STP-9266/assets/merge1-LWaw79NB.png 1x, /STP-9266/assets/merge1@2x-N3e0Ym1y.png 2x"
+                alt="merge`s photo"
+                width="232"
+                height="299"
+              />
+            </div>
+            <div class="merge-wrap-text">
+              <p class="line-text merge-line-hide">
+                Stack your deck based on synergy and roles
+              </p>
+            </div>
+          </div>
+        </li>
+
+        <li class="merge-line-item merge-line-hide">
+          <div class="merge-line">
+            <div class="merge-wrap-img">
+              <img
+                class="merge-img"
+                src="/img/merge4.png 1x"
+                srcset="/STP-9266/assets/merge4-CR_Aog-4.png 1x, /STP-9266/assets/merge4@2x-76-srgZ1.png 2x"
+                alt="merge`s photo"
+                width="181"
+                height="233"
+              />
+            </div>
+            <div class="merge-wrap-text">
+              <p class="line-text">
+                Every merge affects positioning, cost, and cooldown
+              </p>
+            </div>
+            <div class="merge-wrap-img">
+              <img
+                class="merge-img"
+                src="/img/merge5.png 1x"
+                srcset="/STP-9266/assets/merge5-lyMH9k1f.png 1x, /STP-9266/assets/merge5@2x-6gCRchm-.png 2x"
+                alt="merge`s photo"
+                width="181"
+                height="233"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="merge-wrapper">
+        <ul class="merge-list">
+          <li class="merge-list-item green">
+            One bad placement could lead to a full CRASH
+          </li>
+          <li class="merge-list-item yellow">
+            Pal Go is a thinking player’s battlefield.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="story" id="story-world">
+    <div class="container">
+      <div class="story">
+        <img
+          class="title-img-story"
+          src="/STP-9266/assets/storyicon-BVmaz-Bl.png"
+          alt="story"
+        />
+        <div class="div-titile-story">
+          <h2 class="title">Story & World</h2>
+          <p class="text-story">Defend the Acorn Kingdoms from Mazdor the Black
+        </p>
+      
+
+        </div>
+       
+      </div>
+      <div class="wrapper-imgbg">
+        <img
+        class="bg-img-story"
+        src="/STP-9266/assets/storybgdt-BrDqXzAs.png"
+        alt="storybg"
+              />
+              <img
+        class="bgs-img-story"
+        src="/STP-9266/assets/storybg-2EthkppJ.png"
+        alt="storybg"
+              />
+    </div>
+    <div class="div-colon-bg-story">
+        <p class="colon-bg-story">You, the last hunter-general, must rally your Pals, merge your armies, and protect the remaining towers of light.</p>
+    </div>
+    <h3 class="title-swiper-story">Explore fantasy regions:</h3>
+      <div class="swiper" id="story-swiper">
+        <ul class="swiper-wrapper story-swiper">
+          <li class="swiper-slide slide-story">
+            <img
+              class="img-story"
+              src="/STP-9266/assets/story1-BslPkeWY.png"
+              srcset="/STP-9266/assets/story1-BslPkeWY.png 1x, ./img/story1@2x.png 2x"
+              alt="Story 1"
+            />
+            <p class="text-wrap-story">🌳 Greenroot Valley
+            </p>
+          </li>
+          <li class="swiper-slide slide-story">
+            
+            <img
+              class="img-story"
+              src="/STP-9266/assets/story2-Bo3QGJrt.png"
+              srcset="/STP-9266/assets/story2-Bo3QGJrt.png 1x, ./img/story2@2x.png 2x"
+              alt="Story 2"
+            />
+            <p class="text-wrap-story">🏔 Stormrise Peaks
+            </p>
+          </li>
+          <li class="swiper-slide slide-story">
+            <img
+              class="img-story"
+              src="/STP-9266/assets/story3-C2Vjwyc2.png"
+              srcset="/STP-9266/assets/story3-C2Vjwyc2.png 1x, ./img/story3@2x.png 2x"
+              alt="Story 3"
+            />
+            <p class="text-wrap-story">🌫 Ashen Plains
+            </p>
+          </li>
+          <li class="swiper-slide slide-story">
+            
+            <img
+              class="img-story"
+              src="/STP-9266/assets/story4-BXnxlBJQ.png"
+              srcset="/STP-9266/assets/story4-BXnxlBJQ.png 1x, ./img/story4@2x.png 2x"
+              alt="Story 4"
+            />
+            <p class="text-wrap-story">🔥 Volcanic Rift
+            </p>
+          </li>
+          <li class="swiper-slide slide-story">
+            <img
+              class="img-story"
+              src="/STP-9266/assets/story5-DXRebend.png"
+              srcset="/STP-9266/assets/story5-DXRebend.png 1x, ./img/story5@2x.png 2x"
+              alt="Story 5"
+            />
+            <p class="text-wrap-story">🌀 Maze of Shadows
+            </p>
+          </li>
+        </ul>
+        <div class="div-btn-story">
+          <button class="btn-prev prev" data-prev="prev">
+            <svg class="svg-story" width="15" height="32">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_left"></use>
+            </svg>
+          </button>
+          <button class="btn-next next" data-next="next">
+            <svg class="svg-story" width="15" height="32">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_rigth"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <p class="colon-story">Each land offers new enemies, lore, and battle formations.</p>
+    </div>
+  </section>
+      <section class="crash" id="crash">
+  <div class="container">
+    <div class="crash-start">
+      <div class="crash-icon-wrapper">
+        <img
+          class="crash-icon-img"
+          src="/STP-9266/assets/star-B3GyAbGm.png"
+          alt="crash`s icon"
+          width="76"
+          height="90"
+        />
+      </div>
+      <div class="crash-head">
+        <h2 class="crash-title">Crash & Recovery</h2>
+        <h3 class="crash-subtitle">Survive the Crash – Regain Control</h3>
+      </div>
+    </div>
+
+    <div class="crash-line">
+      <ul class="crash-line-list">
+        <li class="crash-line-item">
+          <div class="crash-slide">
+            <div class="crash-wrap-img">
+              <picture>
+                <source
+                  srcset="/STP-9266/assets/crash1-C0vBjjq2.png 1x, /STP-9266/assets/crash1@2x-Df3QFv99.png 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="/STP-9266/assets/crash-m-B2Po1WHY.png 1x, /STP-9266/assets/crash-m@2x-B_xspyZ0.png 2x"
+                  media="(max-width: 1199px)"
+                />
+                <img
+                  class="crash-img"
+                  src="/STP-9266/assets/crash-m-B2Po1WHY.png"
+                  alt="crash`s photo"
+                  width="238"
+                  height="166"
+                />
+              </picture>
+            </div>
+            <div class="crash-wrap-text">
+              <p class="crash-text green">
+                Under pressure? <br />Units may panic and collapse
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="crash-line-item">
+          <div class="crash-slide crash-slide-hide">
+            <div class="crash-wrap-img">
+              <img
+                class="crash-img"
+                src="/STP-9266/assets/crash2-BFYJXeSN.png"
+                srcset="/STP-9266/assets/crash2-BFYJXeSN.png 1x, /STP-9266/assets/crash2@2x-BiwYmj1M.png 2x"
+                alt="crash`s photo"
+                width="211"
+                height="185"
+              />
+            </div>
+            <div class="crash-wrap-text">
+              <p class="crash-text">
+                Rebuild quickly by merging and reactivating defenses
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="crash-line-item">
+          <div class="crash-slide crash-slide-hide">
+            <div class="crash-wrap-img">
+              <img
+                class="crash-img"
+                src="/STP-9266/assets/crash3-BUQvTPdV.png"
+                srcset="/STP-9266/assets/crash3-BUQvTPdV.png 1x, /STP-9266/assets/crash3@2x-jhWCSeo0.png 2x"
+                alt="crash`s photo"
+                width="211"
+                height="185"
+              />
+            </div>
+            <div class="crash-wrap-text">
+              <p class="crash-text">
+                Use crash timers, energy cores, or Hero Focus to delay collapse
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="crash-line-item">
+          <div class="crash-slide crash-slide-hide">
+            <div class="crash-wrap-img">
+              <img
+                class="crash-img"
+                src="/STP-9266/assets/crash4-BFtCC7oO.png"
+                srcset="/STP-9266/assets/crash4-BFtCC7oO.png 1x, /STP-9266/assets/crash4@2x-D_4S3Ula.png 2x"
+                alt="crash`s photo"
+                width="211"
+                height="185"
+              />
+            </div>
+            <div class="crash-wrap-text">
+              <p class="crash-text">
+                Master the Art of Reversal – crash, recover, retaliate!
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <p class="crash-text yellow">
+        It’s not over unless your entire board breaks.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="strategy section" id="strategy">
+  <div class="container">
+    <div class="strategy-wrapper">
+      <div class="strategy-data">
+        <div class="strategy-start">
+          <div class="strategy-icon-wrapper">
+            <img
+              class="strategy-icon-img"
+              src="/STP-9266/assets/brain-MCUYoF-Q.png"
+              alt="strategy`s icon"
+              width="76"
+              height="90"
+            />
+          </div>
+          <div class="strategy-text-wrapper">
+            <h2 class="strategy-title">Strategy Center</h2>
+            <h3 class="strategy-subtitle">
+              Think Before You Place – <br />Every Tile Counts
+            </h3>
+          </div>
+        </div>
+
+        <ul class="strategy-list">
+          <li class="strategy-list-item">
+            <div class="strategy-num">
+              <span class="strategy-num-item">1</span>
+            </div>
+            <p class="strategy-text">Learn enemy spawn patterns</p>
+          </li>
+
+          <li class="strategy-list-item">
+            <div class="strategy-num">
+              <span class="strategy-num-item">2</span>
+            </div>
+            <p class="strategy-text">
+              Use defensive formations that absorb crash waves
+            </p>
+          </li>
+
+          <li class="strategy-list-item">
+            <div class="strategy-num">
+              <span class="strategy-num-item">3</span>
+            </div>
+            <p class="strategy-text">
+              Use crash timers, energy cores, or Hero Focus to delay collapse
+            </p>
+          </li>
+
+          <li class="strategy-list-item">
+            <div class="strategy-num">
+              <span class="strategy-num-item">4</span>
+            </div>
+            <p class="strategy-text">
+              Don’t over-commit early – the boss wave is coming
+            </p>
+          </li>
+
+          <li class="strategy-list-item">
+            <div class="strategy-num">
+              <span class="strategy-num-item">5</span>
+            </div>
+            <p class="strategy-text">
+              Balance merge efficiency vs. field coverage
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <p class="strategy-info">Strategic placement wins wars.</p>
+    </div>
+  </div>
+</section>
+
+      <section id="events-updates">
+  <div class="container">
+    <div class="event-titles-wrapper">
+      <div class="event-img-wrap">
+        <img
+          class="icon-events"
+          src="/STP-9266/assets/iconevent-seT7NDFA.png"
+          alt="iconivents"
+          width="76"
+          height="90"
+        />
+      </div>
+      <div class="event-title-wrapper">
+        <h2 class="title-events">Events & Updates</h2>
+        <p class="title-text-events">Always Something New</p>
+      </div>
+    </div>
+    <ul class="list-events">
+      <li class="item-events">
+        <div class="event-box">
+          <img
+            class="event-img"
+            src="/STP-9266/assets/event1-DbDr_AnU.png"
+            srcset="/STP-9266/assets/event1-DbDr_AnU.png 1x, ./img/event1@2x.png 2x"
+            alt="event1"
+          />
+          <div class="div-box">
+            <p class="text-event">Zombie Rush Weekend:</p>
+          </div>
+        </div>
+      </li>
+      <li class="item-events">
+        <div class="event-box">
+          <img
+            class="event-img"
+            src="/STP-9266/assets/event2-CeDdOWzX.png"
+            srcset="/STP-9266/assets/event2-CeDdOWzX.png 1x, ./img/event2@2x.png 2x"
+            alt="event2"
+          />
+          <div class="div-box">
+            <p class="text-event">Time-Limited Legendary Heroes</p>
+          </div>
+        </div>
+      </li>
+      <li class="item-events">
+        <div class="event-box">
+          <img
+            class="event-img"
+            src="/STP-9266/assets/event3-_i7cFH-_.png"
+            srcset="/STP-9266/assets/event3-_i7cFH-_.png 1x, ./img/event3@2x.png 2x"
+            alt="event3"
+          />
+          <div class="text-box">
+            <p class="text-event">Elven Alliance Trials</p>
+          </div>
+        </div>
+      </li>
+      <li class="item-events">
+        <div class="event-box">
+          <img
+            class="event-img"
+            src="/STP-9266/assets/event4-D9zteG1w.png"
+            srcset="/STP-9266/assets/event4-D9zteG1w.png 1x, ./img/event4@2x.png 2x"
+            alt="event4"
+          />
+          <div class="text-box">
+            <p class="text-event">Crash Gauntlet</p>
+          </div>
+        </div>
+      </li>
+      <li class="item-events">
+        <div class="event-box">
+          <img
+            class="event-img"
+            src="/STP-9266/assets/event5-Be6IRdMi.png"
+            srcset="/STP-9266/assets/event5-Be6IRdMi.png 1x, ./img/event5@2x.png 2x"
+            alt="event5"
+          />
+          <div class="text-box">
+            <p class="text-event">Merge Madness Month</p>
+          </div>
+        </div>
+      </li>
+      <li class="item-events">
+        <div class="event-box">
+          <img
+            class="event-img"
+            src="/STP-9266/assets/event6-fcgT3JEx.png"
+            srcset="/STP-9266/assets/event6-fcgT3JEx.png 1x, ./img/event6@2x.png 2x"
+            alt="event6"
+          />
+          <div class="text-box">
+            <p class="text-event">Leaderboard Season Rewards</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="wrapper-colon">
+        <p class="colon-event">New events drop every week with exclusive units, maps, and PvP formats!</p>
+    </div>
+  </div>
+</section>
+
+      <section class="optimized" id="optimized">
+  <div class="container">
+    <div class="opt-div">
+      <img
+        class="title-image"
+        src="data:image/png;base64,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"
+                alt="Mobile Phone"
+      />
+         
+    <h2 class="title">Mobile Optimized</h2>
+  </div>
+    <div class="cont-opt">
+    <div class="opt-img-cont">
+      <img
+        class="title-img-opt"
+        src="/STP-9266/assets/iPhone16-ebgxCgYY.png"
+        srcset="/STP-9266/assets/iPhone16-ebgxCgYY.png 1x, /STP-9266/assets/iPhone16@x2-BIl-Yncp.png 2x"
+        alt="iPhone16"
+      />
+    </div>
+    <div class="swiper" id="opt-swiper">
+        <ul class="swiper-wrapper opt-swiper">
+          <li class="swiper-slide slide-opt">
+           <p class="text-opt">💾  Offline mode for single-player practice
+
+        </p>
+          </li>
+          <li class="swiper-slide slide-opt">
+            <p class="text-opt">🔋 Battery-optimized engine
+            </p>
+           </li>
+          <li class="swiper-slide slide-opt">
+            <p class="text-opt">🌐 Sync progress with Google Play
+
+            </p>
+          </li>
+          <li class="swiper-slide slide-opt">
+            <p class="text-opt">📲 Works on all Android 6.0+ devices
+
+            </p>
+           </li>
+          <li class="swiper-slide slide-opt">
+             <p class="text-opt">🎮 Controller-friendly for advanced users
+            </p>
+          </li>
+        </ul>
+      </div>
+        <div class="div-btn-opt">
+          <button class="btn-prev-opt prev-opt" data-prev="prev-opt">
+            <svg class="svg-sc" width="15" height="32">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_left"></use>
+            </svg>
+          </button>
+          <button class="btn-next-opt next-opt" data-next="next-opt">
+            <svg class="svg-sc" width="15" height="32">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_rigth"></use>
+            </svg>
+          </button>
+        </div>
+  </div>
+</section>
+
+      <section class="screen" id="screenshots">
+  <div class="container">
+    <div class="screen">
+      <img
+        class="title-image-sc"
+        src="/STP-9266/assets/screen-p9B9vZKI.png"
+        srcset="/STP-9266/assets/screen-p9B9vZKI.png 1x, ./img/screen@2x.png 2x"
+        alt="photo"
+      />
+      <div class="div-titile">
+        <h2 class="title">Screenshots</h2>
+        <p class="text-screen">Include:</p>
+      </div>
+    </div>
+    <div class="swiper" id="sc-swiper">
+      <ul class="swiper-wrapper screen-swiper">
+        <li class="swiper-slide slide-sc">
+          <img
+            class="wrap-img"
+            src="/STP-9266/assets/sc1-Cab3TW9L.png"
+            srcset="/STP-9266/assets/sc1-Cab3TW9L.png 1x, ./img/sc1@2x.png 2x"
+            alt="screen shot1"
+          />
+          <p class="text-wrap">Merge battlefield with energy animation</p>
+        </li>
+        <li class="swiper-slide slide-sc">
+          <p class="text-wrap">PvP arena during real-time clash</p>
+          <img
+            class="wrap-img"
+            src="/STP-9266/assets/sc2-D3_YXuQm.png"
+            srcset="/STP-9266/assets/sc2-D3_YXuQm.png 1x, ./img/sc2@2x.png 2x"
+            alt="screen shot2"
+          />
+        </li>
+        <li class="swiper-slide slide-sc">
+          <img
+            class="wrap-img"
+            src="/STP-9266/assets/sc3-Ce8twIVz.png"
+            srcset="/STP-9266/assets/sc3-Ce8twIVz.png 1x, ./img/sc3@2x.png 2x"
+            alt="screen shot3"
+          />
+          <p class="text-wrap">Crash wave in slow-motion</p>
+        </li>
+        <li class="swiper-slide slide-sc">
+          <p class="text-wrap">Hero selection and ranking</p>
+          <img
+            class="wrap-img"
+            src="/STP-9266/assets/sc4-Dv-cjXIG.png"
+            srcset="/STP-9266/assets/sc4-Dv-cjXIG.png 1x, ./img/sc4@2x.png 2x"
+            alt="screen shot4"
+          />
+        </li>
+        <li class="swiper-slide slide-sc">
+          <img
+            class="wrap-img"
+            src="/STP-9266/assets/sc5-CXpP35hp.png"
+            srcset="/STP-9266/assets/sc5-CXpP35hp.png 1x, ./img/sc5@2x.png 2x"
+            alt="screen shot5"
+          />
+          <p class="text-wrap">Acorn Kingdom defense in late-stage battle</p>
+        </li>
+      </ul>
+      <div class="div-btn">
+        <button class="btn-prev prev" data-prev="prev">
+          <svg class="svg-sc" width="15" height="32">
+            <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_left"></use>
+          </svg>
+        </button>
+        <button class="btn-next next" data-next="next">
+          <svg class="svg-sc" width="15" height="32">
+            <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_rigth"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="faq" id="faq">
+  <div class="container">
+    <div class="div-faq">
+      <div class="div-title">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADkAAAA1CAYAAAD72kP+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATSSURBVHgB7ZptTFtVGICfe1taoC0rG6PY8m2ZQJlBNqeBxYVs+7NfuhiyH2QxTo1kUWM0+2N0zfzjMiNLzDLNIj80M24uwY/EKVExS9w06ogas/iZAcIYjMhYAflqfS9oYtgtq+GeyzB9khN+3Nt7+/Ce855z3lNIYy1R0I2GzWgo4FXI+BYia6B+LWzwQUUmFGRAlvHOaRifhMvX4IshODsMZ47AMIqwTDIhz3ocbi+FhyphSz6UZoNXrDQ9yYtmpI3LRwehrxfevQKHnoZuLMYSSSNyI/DiXbA7BH43c9JzLdUvYQiL6C+/w95m6MBCLBkfl2C2XrplmQhKlyRO6oL8fa9Dmnw+vB5OvQdNWIglklHxkvH1VpylYciuAl85HOmEQizCskw3C+3j80G8Hk2bbynihbw8eAGLsDS7noMvb4FNWlYWjuLimO71dukezzeaz/dHYmZmJjE66p8dHLwzPjTUEB8dzVjsWQlNm4wnEutuhR6WiBMLGXU63y6sqirIrKs7rK1efTKvtbVv4T1GFu4Lh+9OzM62JcbGKpM9S/77brfXu4NY7BVuJjojEe9IS0t5Kvf+AMUXIHZRvJO1nry8o6x0PoV3uheR7A2FTmEBti+x/o3MiecXm2o0l2upCXuOZZUcmZ8ezZFsLAlrCAtYVklJr1XJvoDmduMOBM5hAcsm+ZhkT8lQDcm6qzMUirmdzo+wgGWTlMX7oyUQNJWUrqoHg2/4Tp9eud1Vdis1jfBUVpLrjtLSaWcweBiLsF3yERmKdbC/AorMoqh5vbgjkaN5J078jEXYKmkIShd9dgPca5pWdZ3M6uoPM8Lh/dp/28jcHBjLuUNw32cwbbYA6Nb1RF9lZe+lPXs2YTEObOIq1G6Ek1WylTILkaOoaCRr+/bd+ceOnWElIt00u01WN78lW74Fg38O7tq1F0XYMiZl99t8D9xh9jJjW5bV2PjS2p07le02lEtKeNZE4IDp5lHmQ3dt7dmJ/PzntaamWRShXFLKkg/WQMB0HIZCU1p5+b6i1tYJFKJU0sioIticaXZRougsK3szcPz45yhGqeSTUpcKwjrTSd/jwZGT04YNKJX0iGAumAZSz80di09Pn8cGVEsWupJc0xyOHws6OsawAaWSEkKnaTlQxmMiYZwO2IOl1bqFSBSHk1bTJyexC7WSLteALLYvupzO6zylu8YYGMAOlEr2T01dGI9Ebhs3uVYdicTp6iKNRSg5hF3IPtl5SBqtkPGpSdfpeRksKWukilLJFsithoOlcL8s73KNVB6DCTlS/lhS6zNSzPoeG1Am+YSsV2vhgy1QZzZPXYZrcty3cRv8hGKUzZMSwQMNSQQN5LjdF4DXOhUnPwMlksb2Kgzb3IvcY3Qhn67Xhz2eKhSjRFI2yaU+ObVKoRKla37/ZhSjRFJOijNdKT5bX7XKj2KUSMpY65co3nAjLKdWaIHAryhGVST75c/XN0rdjpKSqx6//xMUo0Ryhyy/pdbZGtf1qWT3aNnZuCorn8tpb1f2S6x/UDaFrIf3da/3YS0nZ0TLmC9jzSUihwNnODzl3rr1IKGQLZUB5cu6/pqaKonaAyK4WcagLhWB78jPf/1KUdFXkWh0iv8TRlErGo0u66FvmjRp0tjGX1LAQ+scikCuAAAAAElFTkSuQmCC"
+          width="49px"
+          max-height="49px"
+          alt="?"
+          class="faqicon"
+        />
+      </div>
+      <h2 class="title-faq">FAQ</h2>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        Is Pal Go really free to play?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Yes! You can enjoy the entire core gameplay for free. Optional in-app
+        purchases offer cosmetics, boosts, and extra rewards, but are not
+        required to progress.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        What is the "Crash" mechanic?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        It’s a unique feature where poor unit placement or overextension can
+        cause your army to collapse, removing units and exposing your tower.
+        Learn to manage space, tempo, and counter-pressure to avoid a crash.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        Is Pal Go single-player or multiplayer?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Both. You can enjoy a full single-player campaign, challenge AI in
+        roguelite stages, and battle real players in PvP mode.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        Can I progress without PvP?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Absolutely. PvP is optional but provides extra rewards and ranking
+        opportunities. You can focus purely on solo gameplay if you prefer.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        How do I merge units?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Drag and drop identical units onto each other. Once merged, they evolve
+        into a stronger version with better stats and abilities.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        Can I undo a merge or move?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        No. Every move is permanent, so plan ahead! That’s part of the strategy.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        What happens during a crash?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        You lose the affected row or segment of your defenses, and your energy
+        resets. It`s a tactical penalty but also a chance to rebuild with better
+        placement.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        Do heroes matter in battle?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Yes. Each hero has unique active and passive skills that affect battle
+        flow, energy gain, and unit support. Choosing the right hero is
+        essential for success.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        What are "Energy Cores"?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        They`re earned through gameplay and used to power up merges, delay
+        crashes, or deploy emergency reinforcements in critical situations.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        How do Pal Alliances work?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Alliances are player guilds. Join one to participate in co-op events,
+        donate units, and earn alliance-based rewards.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        Are there different unit types?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Yes - melee tanks, ranged attackers, magic casters, aerial defenders,
+        and utility support units. Learning their synergies is key to survival.
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-title">
+        Is there controller support?
+        <span class="accordion-icon">
+          <svg
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.5 6H6M6 6H1.5M6 6V1.5M6 6V10.5"
+              stroke="#EFBB31"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="accordion-content">
+        Yes, partial controller support is available for Android-compatible
+        devices and upcoming desktop/web versions.
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="reviews">
+        <img
+          class="title-img"
+          src="data:image/png;base64,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"
+          alt="reviews"
+        />
+        <div class="div-titile-reviews">
+          <h2 class="title">Reviews</h2>
+          <p class="text-reviews">Players Are Merging to Victory
+        </p>
+        </div>
+      </div>
+      <div class="swiper" id="reviews-swiper">
+        <ul class="swiper-wrapper reviews-swiper">
+          <li class="swiper-slide slide-reviews">
+            <img
+              class="img-reviews"
+              src="/STP-9266/assets/rafael-DSQoCwqG.png"
+              srcset="/STP-9266/assets/rafael-DSQoCwqG.png 1x, ./img/rafael@2x.png 2x"
+              alt="Rafael M"
+            />
+            <p class="text-wrap-reviews"><span class="name-reviews">🔥 Rafael M. (Spain)</span> "Fast, furious, and smart. I LOVE the crash mechanic — it punishes bad plays and rewards timing. PvP is intense!"
+            </p>
+          </li>
+          <li class="swiper-slide slide-reviews">
+            
+            <img
+              class="img-reviews"
+              src="/STP-9266/assets/kayla-Bnr8O9Kl.png"
+              srcset="/STP-9266/assets/kayla-Bnr8O9Kl.png 1x, ./img/kayla@2x.png 2x"
+              alt="kayla B"
+            />
+            <p class="text-wrap-reviews"><span class="name-reviews">🧙 Kayla B. (USA)</span> "The best tower defense game I`ve tried in years. The merging system makes you think three moves ahead."
+            </p>
+          </li>
+          <li class="swiper-slide slide-reviews">
+            <img
+              class="img-reviews"
+              src="/STP-9266/assets/jon-BOpWgGMf.png"
+              srcset="/STP-9266/assets/jon-BOpWgGMf.png 1x, ./img/jon@2x.png 2x"
+              alt="Jon P"
+            />
+            <p class="text-wrap-reviews"><span class="name-reviews">🏰 Jon P. (UK)</span> "Great blend of action and strategy. Matches are quick but deeply tactical. Visuals are crisp, too."
+            </p>
+          </li>
+          <li class="swiper-slide slide-reviews">
+            
+            <img
+              class="img-reviews"
+              src="/STP-9266/assets/hinata-D2-EyxIt.png"
+              srcset="/STP-9266/assets/hinata-D2-EyxIt.png 1x, ./img/hinata@2x.png 2x"
+              alt="Hinata Y"
+            />
+            <p class="text-wrap-reviews"><span class="name-reviews">🎯 Hinata Y. (Japan)</span> "I`ve played 100+ hours. Merge + real-time PvP? Genius combo. Give us more maps!"
+            </p>
+          </li>
+          <li class="swiper-slide slide-reviews">
+            <img
+              class="img-reviews"
+              src="/STP-9266/assets/malik-gR5C78Ix.png"
+              srcset="/STP-9266/assets/malik-gR5C78Ix.png 1x, ./img/malik@2x.png 2x"
+              alt="Malik S"
+            />
+            <p class="text-wrap-reviews"><span class="name-reviews">🧠 Malik S. (UAE)</span> Challenging in the best way. I learn something new every crash. Perfect for strategy lovers.</p>
+          </li>
+        </ul>
+        <div class="div-btn-reviews">
+          <button class="btn-prev prev" data-prev="prev">
+            <svg class="svg-reviews" width="15" height="32">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_left"></use>
+            </svg>
+          </button>
+          <button class="btn-next next" data-next="next">
+            <svg class="svg-reviews" width="15" height="32">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-arr_m_rigth"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <p class="colon-reviews">Challenging in the best way. I learn something new every crash. Perfect for strategy lovers.”</p>
+    </div>
+  </section>
+      <section class="cta section" id="cta">
+  <div class="container">
+      <div class="cta-start">
+          <div class="cta-icon-wrapper">
+            <img
+              class="cta-icon-img"
+              src="data:image/png;base64,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"
+              alt="cta`s icon"
+              width="76"
+              height="90"
+            />
+            </div>
+            <div class="cta-text-wrapper">
+              <div class="cta-head">
+                  <h2 class="cta-title">CTA</h2>
+                  <h3 class="cta-subtitle">Defend. Merge. Dominate.
+                  </h3>
+              </div>
+            </div>
+      </div>
+      <div class="cta-swiper swiper-container" id="cta-swiper">
+        <div class="cta-wrapper swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="cta-slide slide-1">
+              <div class="cta-wrap-img">
+                <img 
+                class="cta-img"
+                src="/img/cta1.png 1x"
+                srcset="/STP-9266/assets/cta1-BsCHulto.png 1x, /STP-9266/assets/cta1@2x-HlembzFL.png 2x"
+                alt="photo`s cta 1"
+                width="213"
+                height="158"
+                >
+              </div>
+              <p class="cta-descr">Don’t let <span class="red"> Mazdor </span>take the kingdoms</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cta-slide slide-2">
+              <div class="cta-wrap-img">
+                <img 
+                class="cta-img"
+                src="/img/cta2.png 1x"
+                srcset="/STP-9266/assets/cta2-DvuSU8gs.png 1x, /STP-9266/assets/cta2@2x-VU-QiaYk.png 2x"
+                alt="photo`s cta 2"
+                width="213"
+                height="158">
+              </div>
+              <p class="cta-descr">Forge your team, master the battlefield, and rise in the ranks of Pal Go’s fiercest defenders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+         <div class="cta-down-wrapper">
+           <ul class="cta-download">
+            <li class="cta-download-item">
+              <a class="cta-down-link" href="https://royalturborush.com" download="">Download Now</a>
+            </li>
+            <li class="cta-download-item">
+              <a class="cta-google-link" href="https://royalturborush.com"
+                >Free on
+                <img
+                class="cta-google-icon"
+                srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMLSURBVHgBtZZNTBNBFMf/b3cpUKgfBBBiouVgQrxIlCMJRUmM8YKEC55KhANeDIkXE5U2SgKe6MF4MEo5gRfpwURUkBoxQSRAQiKQIDTEAIEoi9RS+7HjTrWk0pbu1vI7dLbz3tvf62ZmugSVyr46C0hsVy8tjCCDMVeYKfbpRpcHBwSd7au3CkQ9iaPMFlKU3oNoQBAV042kUUY2kYSRymf17cgwZHngYb5jDijZy/smMjAPY7BPNj53IhPi8x1exgQffCUOhHPnUhZkqoGIOPrFV/wYIdOopkLeADGlaaLR5UYa/CPm+AsGEDjqglbUBpzp7IA4cTrydBoQEk3mfL8Cw2Yd9EAgq0Ti0rn++p5HA+XmVPlCsgCXZ3+7Cr20GOetzaaFqeCw1L7zEmboFXOy5YvIWW8BKUZoodk4h2vGeX55RH32NjFLHAm8Fq26xRzDdhWMK7dSymOku6iP30wC9QSGxKW9DaQUc8RfJ5D39R4oVJgwfts0FSdN1kDwjWTRLI4kBguRx395jNxEQXQeGsflFKdebAPqx0hoSKzTLN4r59KHhz+g2rAKvTBG7brEUbn5SxOeBj7ilLSFtCBU6BYX+ddgG+9Afv9xhNdzkSbTusRceneyLTIyv4gfT8oRmCmAXgiCXbPYvL2ArvGWiDSWny9Owj9aouke6r/aO3V/10i1AZekpaByYxTXZ7tgDHkTxnfel0bGnKq1xEIijzrYDbVBZ3Qupbh69RVaZztTpSWW8/c3BY4sMa+bamQ5Nn9fccNiLxo8TmiFy1lIkHNrVsCFkpjfTRe4UI7LlTIl5ZBq2BkrcRy6v2z7MyMnzZUyJVVxhrJEe+ngmEdLcpy49XMXqtcGoRl1pYYNolWrME7MV+zNmTs4vTmtrVIVksBsRcMTbqSBFJXyg8HsXUhd8Z/CXXHsabQ/6l5kzF789pMTGYAWL9VO5Qe2KpImqEszTMxeMjTRjQwimIJyWzKheuLYveG8skxL/94f2KittDCFbEQ4o4BtgQSnL2TsLnO7ZRwQvwFPVVtceMnYBAAAAABJRU5ErkJggg== 1x, data:image/png;base64,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 2x"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAfCAYAAADwbH0HAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMLSURBVHgBtZZNTBNBFMf/b3cpUKgfBBBiouVgQrxIlCMJRUmM8YKEC55KhANeDIkXE5U2SgKe6MF4MEo5gRfpwURUkBoxQSRAQiKQIDTEAIEoi9RS+7HjTrWk0pbu1vI7dLbz3tvf62ZmugSVyr46C0hsVy8tjCCDMVeYKfbpRpcHBwSd7au3CkQ9iaPMFlKU3oNoQBAV042kUUY2kYSRymf17cgwZHngYb5jDijZy/smMjAPY7BPNj53IhPi8x1exgQffCUOhHPnUhZkqoGIOPrFV/wYIdOopkLeADGlaaLR5UYa/CPm+AsGEDjqglbUBpzp7IA4cTrydBoQEk3mfL8Cw2Yd9EAgq0Ti0rn++p5HA+XmVPlCsgCXZ3+7Cr20GOetzaaFqeCw1L7zEmboFXOy5YvIWW8BKUZoodk4h2vGeX55RH32NjFLHAm8Fq26xRzDdhWMK7dSymOku6iP30wC9QSGxKW9DaQUc8RfJ5D39R4oVJgwfts0FSdN1kDwjWTRLI4kBguRx395jNxEQXQeGsflFKdebAPqx0hoSKzTLN4r59KHhz+g2rAKvTBG7brEUbn5SxOeBj7ilLSFtCBU6BYX+ddgG+9Afv9xhNdzkSbTusRceneyLTIyv4gfT8oRmCmAXgiCXbPYvL2ArvGWiDSWny9Owj9aouke6r/aO3V/10i1AZekpaByYxTXZ7tgDHkTxnfel0bGnKq1xEIijzrYDbVBZ3Qupbh69RVaZztTpSWW8/c3BY4sMa+bamQ5Nn9fccNiLxo8TmiFy1lIkHNrVsCFkpjfTRe4UI7LlTIl5ZBq2BkrcRy6v2z7MyMnzZUyJVVxhrJEe+ngmEdLcpy49XMXqtcGoRl1pYYNolWrME7MV+zNmTs4vTmtrVIVksBsRcMTbqSBFJXyg8HsXUhd8Z/CXXHsabQ/6l5kzF789pMTGYAWL9VO5Qe2KpImqEszTMxeMjTRjQwimIJyWzKheuLYveG8skxL/94f2KittDCFbEQ4o4BtgQSnL2TsLnO7ZRwQvwFPVVtceMnYBAAAAABJRU5ErkJggg=="
+                alt="google icon"
+                width="16"
+                height="16"
+              />
+              </a>
+            </li>
+           </ul>
+         </div>
+         <div class="cta-down-descr">
+           <p class="cta-down-text">Join the Defense Now – Free Download</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+      <section class="contact">
+  <div class="container">
+    <div class="contact-start">
+      <div class="contact-icon-wrapper">
+        <img
+          class="contact-icon"
+          src="/STP-9266/assets/contact-gui-Msrn.png"
+          alt="contact`s icon"
+          width="76"
+          height="90"
+        />
+      </div>
+      <h2 class="contact-title">Contact</h2>
+    </div>
+    <ul class="contact-list">
+      <li class="contact-list-item">
+        <ul class="contact-type">
+          <li class="contact-descr">
+            <span class="contact-sign">📧 </span
+            ><span class="contact-descr-item"> Email:</span>
+          </li>
+          <li class="contact-descr yellow">
+            <a href="mailto:support@royalturborush.com"
+              >support@royalturborush.com</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="contact-list-item">
+        <ul class="contact-type">
+          <li class="contact-descr sign">
+            <span class="contact-sign">📍</span
+            ><span class="contact-descr-item"> Studio HQ:</span>
+          </li>
+          <li class="contact-descr yellow">
+            <a href="https://www.google.com/maps/"
+              >99 Arcane Tower Rd, Gameforge City</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="contact-list-item">
+        <ul class="contact-type">
+          <li class="contact-descr">
+            <span class="contact-sign">🕐</span
+            ><span class="contact-descr-item"> Support Hours:</span>
+          </li>
+          <li class="contact-descr yellow">Mon–Fri, 9am–5pm GMT</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      <container class="popup">
+  <div class="cookie-popup" id="cookiePopup">
+    <p>
+      We use cookies to improve your experience on our website. By browsing this
+      website, you agree to our use of cookies.
+    </p>
+    <div class="cookie-buttons">
+      <button class="btn accept">ACCEPT COOKIES</button>
+      <button class="btn decline">DECLINE COOKIES</button>
+    </div>
+  </div>
+</container>
+ 
     </main>
 
     <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+  <div class="container footer">
+    <div class="footer-social">
+      <ul class="footer-list-icons">
+        <li class="footer-item-icons">
+          <a class="social-wrapper" href="https://discord.com/" target="_blank">
+            <svg class="social-icons" fill="none" width="20" height="20">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-discord"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item-icons">
+          <a class="social-wrapper" href="https://youtube.com/" target="_blank">
+            <svg class="social-icons" fill="none" width="20" height="20">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item-icons">
+          <a
+            class="social-wrapper"
+            href="https://www.facebook.com/"
+            target="_blank"
+          >
+            <svg class="social-icons" fill="none" width="20" height="20">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item-icons">
+          <a
+            class="social-wrapper"
+            href="https://www.tiktok.com/"
+            target="_blank"
+          >
+            <svg class="social-icons" fill="none" width="20" height="20">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-tiktok"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-item-icons">
+          <a
+            class="social-wrapper"
+            href="https://www.instagram.com/"
+            target="_blank"
+          >
+            <svg class="social-icons" fill="none" width="20" height="20">
+              <use href="/STP-9266/assets/sprite-4kSAjFAD.svg#icon-inst"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-wrapper">
+      <div class="footer-terms">
+        <ul class="footer-list-terms">
+          <li class="footer-item-terms">
+            <a href="./privacy.html" class="terms-descr">Privacy Policy</a>
+          </li>
+          <li class="footer-item-terms">
+            <a href="./terms.html" class="terms-descr">Terms and Conditions</a>
+          </li>
+          <li class="footer-item-terms">
+            <a href="./cookies.html" class="terms-descr">Cookies</a>
+          </li>
+        </ul>
+        <p class="footer-copyright">
+          royalturborush.com © 2025. All rights reserved.
+        </p>
+      </div>
+      <div class="footer-logo">
+        <a class="logo-link" href="/index.html" aria-label="Site logo">
+          <picture>
+            <source
+              srcset="/STP-9266/assets/logo-d-CdmInASr.png 1x, /STP-9266/assets/logo-d@2x-DVpqWl2-.png 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="data:image/png;base64,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 1x, /STP-9266/assets/logo-m@2x-CFvAK3Jc.png 2x"
+              media="(max-width: 1199px)"
+            />
+            <img
+              src="data:image/png;base64,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"
+              alt="logo"
+              width="24"
+              height="24"
+              class="logo"
+            />
+          </picture>
+        </a>
+      </div>
+    </div>
   </div>
 </footer>
 
