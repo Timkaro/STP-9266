@@ -8,9 +8,11 @@
   display: flex;
   justify-content: center;
 }
+
 .title-image-sc{
   display: none;
 }
+
 .title {
   font-family: var(--second-family);
   font-weight: 700;
@@ -19,6 +21,7 @@
   color: var(--accent-yellow);
   margin-bottom: 16px;
 }
+
 .text-screen {
   font-family: var(--second-family);
   font-weight: 700;
@@ -28,6 +31,7 @@
   color: var(--yeloow-2);
   margin-bottom: 16px;
 }
+
 .swiper {
   height: auto;
   position: relative;
@@ -37,36 +41,12 @@
   display: flex !important;
   flex-direction: column;
 }
+
 .slide-sc {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  display: none !important;
-}
-.div-btn {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  display: flex;
-  gap: 275px;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-50%);
-  z-index: 1;
-}
-.prev,
-.next {
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: none;
-  border: none;
 }
 
 .svg-sc {
@@ -74,13 +54,14 @@
 }
 
 .wrap-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 277px;
-  padding: 8px 0;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    padding: 8px 0;
+  }
+
 .text-wrap {
   font-family: var(--font-family);
   font-weight: 500;
@@ -95,7 +76,6 @@
     flex-direction: row;
     gap: 300px;
   }
-
   .div-titile {
     display: flex;
     justify-content: center;
@@ -117,25 +97,17 @@
     font-size: 30px;
     line-height: 167%;
   }
-
- 
   .slide-sc {
     display: flex;
     flex-direction: row;
     justify-content: center;
-        align-items: center;
-    
+        align-items: center;    
   }
-  .div-btn {
-   justify-content: space-between;
-  }
-
   .wrap-img {
     border: 3px solid var(--accent-mint);
     border-radius: 5px;
     width: 260px !important;
   }
-
   .text-wrap {
     position: relative;
     padding-left: 20px;
@@ -147,7 +119,6 @@
     color: var(--yeloow-2);
     margin: 20px 0;
   }
-
   .text-wrap::before {
     content: '';
     position: absolute;

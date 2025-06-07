@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll('.cookie-buttons .btn');
 
 // Перевіряємо будь-яке рішення користувача
 if (localStorage.getItem('cookiesAccepted') !== null) {
-  popup.style.display = 'none';
+  popup.style.display = 'block';
 }
 
 buttons.forEach(button => {

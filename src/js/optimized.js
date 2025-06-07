@@ -1,48 +1,28 @@
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/pagination';
 
-let swiperInstance = null;
+let optSwiperInstance = null;
 
-function setStaticView(isStatic) {
-  const swiperEl = document.querySelector('.swiper-wrapper');
-  if (!swiperEl) return;
-  if (isStatic) {
-    swiperEl.classList.add('static-view');
-  } else {
-    swiperEl.classList.remove('static-view');
-  }
-}
+function initOptSwiper() {
+  const screenWidth = window.innerWidth;
 
-function initSwiper() {
-  const isMobile = window.innerWidth < 1200;
-
-  if (isMobile && !swiperInstance) {
-    setStaticView(false);
-    swiperInstance = new Swiper('#opt-swiper', {
-      loop: true,
-      modules: [Navigation, Keyboard],
+  if (screenWidth <= 1200 && !optSwiperInstance) {
+    optSwiperInstance = new Swiper('#opt-swiper', {
+      modules: [Pagination],
+      loop: false,
       slidesPerView: 1,
-      spaceBetween: 50,
-      keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-      },
-      navigation: {
-        nextEl: '[data-next="next-opt"]',
-        prevEl: '[data-prev="prev-opt"]',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
     });
-  } else if (!isMobile && swiperInstance) {
-    swiperInstance.destroy(true, true);
-    swiperInstance = null;
-    setStaticView(true);
-  } else if (!isMobile) {
-    setStaticView(true);
+  } else if (screenWidth > 1200 && optSwiperInstance) {
+    optSwiperInstance.destroy(true, true);
+    optSwiperInstance = null;
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  initSwiper();
-  window.addEventListener('resize', initSwiper);
-});
+window.addEventListener('load', initOptSwiper);
+window.addEventListener('resize', initOptSwiper);

@@ -4,13 +4,15 @@
   align-items: center;
   gap: 18px;
   background-image: url('../img/cookiembg.png');
-  background-size: cover;
+  background-size: unset;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: bottom;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 20px;
+  height: auto;
+  padding: 20px 0;
   z-index: 1000;
   text-align: center;
 }
@@ -21,7 +23,7 @@
   max-width: 275px;
   font-size: 12px;
   line-height: 133%;
-  text-align: center;
+  margin: 0 auto;
   color: var(--black);
 }
 
@@ -65,6 +67,7 @@
   .cookie-popup p {
     font-family: var(--second-family);
     max-width: 748px;
+    height: auto;
     font-size: 20px;
     line-height: 190%;
   }

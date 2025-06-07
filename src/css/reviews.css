@@ -8,9 +8,11 @@
     display: flex;
     justify-content: center;
   }
+
   .title-img {
     display: none;
   }
+
   .title {
     font-family: var(--second-family);
     font-weight: 700;
@@ -19,6 +21,7 @@
     color: var(--accent-yellow);
     margin-bottom: 16px;
   }
+
   .text-reviews {
     font-family: var(--second-family);
     font-weight: 700;
@@ -28,65 +31,37 @@
     color: var(--yeloow-2);
     margin-bottom: 16px;
   }
+
   .swiper {
     height: auto;
     position: relative;
   }
+
   .swiper-wrapper.reviews-swiper {
     display: flex;
   }
+
   .swiper-slide {
     display: flex !important;
     flex-direction: column;
     align-items: center;
   }
+
   .slide-reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none !important;
-  }
-  .div-btn-reviews {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 238px;
-     align-items: center;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  .prev,
-  .next {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: none;
-    border: none;
-  }
-  
-  .svg-reviews {
+
+    .svg-reviews {
     fill: var(--accent-mint);
   }
   
-  .wrap-img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 277px;
-    padding: 8px 0;
-  }
-  .name-reviews {
+    .name-reviews {
     color: var(--accent-mint);
   }
+
   .text-wrap-reviews {
     display: flex;
     flex-direction: column;
@@ -99,16 +74,17 @@
   color: var(--yeloow-2);
     max-width: 240px;
   }
+
   .colon-reviews {
     display: none;
   }
+
   @media screen and (min-width: 1200px) {
     .reviews {
       flex-direction: row;
       gap: 250px;
     }
-  
-    .div-titile-reviews {
+      .div-titile-reviews {
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -139,19 +115,7 @@ color: var(--yeloow-2);
       justify-content: space-between;
       gap: 10px;
       align-items: center;
-      
-    }
-   
-   
-    .div-btn-reviews {
-      flex-direction: space-between;
-    }
-    .screen-swiper.static-view .swiper-button-next,
-    .screen-swiper.static-view .swiper-button-prev {
-      display: none !important;
-    }
-    
-  
+      }
     .text-wrap-reviews {
       position: relative;
       font-family: var(--font-family);
@@ -171,5 +135,4 @@ text-align: center;
 color: var(--accent-yellow);
 margin-top: 36px;
     }
-    
   }

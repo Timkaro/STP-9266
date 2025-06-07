@@ -42,6 +42,12 @@ main {
   flex-grow: 1;
 }
 
+.swiper-pagination {
+    --swiper-pagination-color: var(--accent-mint);
+    --swiper-pagination-bullet-inactive-color: #fff;
+    --swiper-pagination-bullet-size: 10px;
+}
+
 @media screen and (min-width: 1200px) {
   body {
     background: linear-gradient(91deg, #0c072c, #226158);
