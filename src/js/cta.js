@@ -14,7 +14,7 @@ function initCtaSwiper() {
       loop: false,
       slidesPerView: 1,
       pagination: {
-        el: '#cta-swiper .swiper-pagination',
+        el: '.swiper-pagination',
         clickable: true,
       },
     });
