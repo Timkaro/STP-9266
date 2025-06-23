@@ -8,7 +8,7 @@ let domSwiperInstance = null;
 function initDomSwiper() {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth <= 1200 && !domSwiperInstance) {
+  if (screenWidth < 1200 && !domSwiperInstance) {
     domSwiperInstance = new Swiper('#dom-swiper', {
       modules: [Pagination],
       loop: false,

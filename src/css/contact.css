@@ -59,7 +59,7 @@
   .contact-start {
     display: flex;
     justify-content: start;
-    gap: 350px;
+    gap: 320px;
   }
   .contact-icon,
   .contact-sign {

@@ -8,7 +8,7 @@
   display: flex;
   border: 3px solid var(--accent-mint);
   border-radius: 5px;
-  padding: 10px;
+  padding: 2px;
 }
 
 .title-faq {
@@ -92,8 +92,12 @@
     padding: 10px;
   }
   .div-faq {
-    gap: 395px;
+    gap: 330px;
     margin-bottom: 60px;
+  }
+  .faqicon {
+    width: 76px;
+    height: 76px;
   }
   .title-faq {
     font-size: 56px;
